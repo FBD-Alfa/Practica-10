@@ -91,6 +91,7 @@ INSERT INTO veterinario(curp,idEstetica,apellidoM,apellidoP,nombre,estado,calle,
 INSERT INTO veterinario(curp,idEstetica,apellidoM,apellidoP,nombre,estado,calle,numero,cp,telefono,genero,nacimiento,salario,rfc,inicio,fin,noPacientes,fechaInicio,fechaTermino) VALUES ('RQOM541828LJANVP07',29,'Roxbrough','Rigglesford','Griswold','Sonora','West',3,12102,8799264221,'M','1970-09-06',15281,'UWVH668069HZT','5:55 AM','11:36 AM',3,'2015-06-16','2006-08-08');
 INSERT INTO veterinario(curp,idEstetica,apellidoM,apellidoP,nombre,estado,calle,numero,cp,telefono,genero,nacimiento,salario,rfc,inicio,fin,noPacientes,fechaInicio,fechaTermino) VALUES ('MVNO970974YSCNZY38',15,'Hurich','Alldread','Noelyn','Durango','Harper',17,78562,6886371153,'F','1988-01-16',19698,'GDDP953265T3J','7:00 AM','6:44 AM',3,'2016-10-02','2003-06-08');
 INSERT INTO veterinario(curp,idEstetica,apellidoM,apellidoP,nombre,estado,calle,numero,cp,telefono,genero,nacimiento,salario,rfc,inicio,fin,noPacientes,fechaInicio,fechaTermino) VALUES ('DMZZ169853LZQZXD27',16,'Currum','Netherclift','Martino','Michoacán','Sherman',26367,37771,1600468550,'M','1973-05-08',9879,'UNGB026160LKX','6:58 AM','10:46 PM',2,'2017-08-06','2005-08-30');
+INSERT INTO
 veterinario(curp,idEstetica,apellidoM,apellidoP,nombre,estado,calle,numero,cp,telefono,genero,nacimiento,salario,rfc,inicio,fin,noPacientes,fechaInicio,fechaTermino) VALUES ('SAUC990507MMCNRY07',16,'Urbano','Sánchez','Cynthia','México','Ote.35',26367,37771,1600468550,'F','1999-05-07',9879,'UNGB026160LKX','6:58 AM','10:46 PM',2,'2017-08-06','2005-08-30');
 
 --Supervisor
@@ -1828,6 +1829,7 @@ INSERT INTO consemergenciaconsiderable(idConsulta,curpCliente,nomMascota,curpVet
 INSERT INTO consemergenciaconsiderable(idConsulta,curpCliente,nomMascota,curpVeterinario,idEstetica,precioEmergencia,procedimiento) VALUES (696830,'PWPK570862BZJGFO89','Alikee','WCFI709086NWOJVN45',25,803,'Despulgamiento');
 INSERT INTO consemergenciaconsiderable(idConsulta,curpCliente,nomMascota,curpVeterinario,idEstetica,precioEmergencia,procedimiento) VALUES (992852,'QPIE556400FVPFRC48','Mal','SGGN250373XEOOMD41',9,994,'Despulgamiento');
 INSERT INTO consemergenciaconsiderable(idConsulta,curpCliente,nomMascota,curpVeterinario,idEstetica,precioEmergencia,procedimiento) VALUES (700998,'PYPN389370SXCFCH41','Rebekah','NUOG179259LBHOPT70',18,1191,'Medicacion');
+
 
 -- Consulta de emergencia leve
 INSERT INTO consemergencialeve(idConsulta,curpCliente,nomMascota,curpVeterinario,idEstetica,precioEmergencia,procedimiento) VALUES (490706,'PEUO675539RJSITX31','Cooper','ZHVD345900BETGNH58',6,654,'Lavado de herida');
