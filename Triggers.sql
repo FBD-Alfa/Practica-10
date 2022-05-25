@@ -3,17 +3,17 @@ CREATE OR REPLACE FUNCTION swap_surnames() RETURNS TRIGGER
 AS
 $$
 DECLARE
-    apeM varchar(20);
-    apeP varchar(20);
+    apeM varchar(50);
+    apeP varchar(50);
     BEGIN
-    if(TG_OP = 'INSERT') then
-    select apellidoM into apeM from supervisor
-    where curp = new.curp;
-    select apellidoP into apeP from supervisor
-    where curp = new.curp;
-    update supervisor set apellidoM = apeP , apellidoP = apeM where curp = new.curp;
-    end if;
-    return null;
+    IF(TG_OP = 'INSERT') THEN
+    SELECT apellidoM INTO apeM FROM supervisor
+    WHERE curp = NEW.curp;
+    SELECT apellidoP INTO apeP FROM supervisor
+    WHERE curp = NEW.curp;
+    UPDATE supervisor SET apellidoM = apeP , apellidoP = apeM WHERE curp = NEW.curp;
+    END IF;
+    RETURN null;
     END
     $$
 LANGUAGE plpgsql;
