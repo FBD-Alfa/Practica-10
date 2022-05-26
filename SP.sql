@@ -5,7 +5,7 @@ CREATE OR REPLACE PROCEDURE registrarVeterinario(curp IN VARCHAR,idEstetica IN I
 									apellidoM IN VARCHAR, apellidoP IN VARCHAR,
 									nombre IN VARCHAR, estado IN VARCHAR,
 									calle IN VARCHAR, numero IN INT, cp IN INT,
-									telefono IN CHAR, genero IN CHAR, 
+									telefono IN VARCHAR, genero IN VARCHAR, 
 									nacimiento IN DATE, salario IN INT, 
 									rfc in VARCHAR, inicio IN VARCHAR,
 									fin IN VARCHAR, noPacientes IN INT,
@@ -20,7 +20,8 @@ CREATE OR REPLACE PROCEDURE registrarVeterinario(curp IN VARCHAR,idEstetica IN I
 	$$
 	Language plpgsql;
 
-CALL registrarVeterinario('ZHXY752436AAIJJQ83',26,'Barnhart','Chadd','Faye','Zacatecas','Rockefeller',23,16060,3045636873,'F','1985-07-09'::date,12264,'MEPR796726K32','9:58 AM','12:16 AM',2,'2009-08-22'::date,'2017-03-28'::date);
+CALL registrarVeterinario('ZHXY752436AAIJJQ83'::varchar,26,'Barnhart'::varchar,'Chadd'::varchar,'Faye'::varchar,'Zacatecas'::varchar,'Rockefeller'::varchar,
+						  23,16060,3045636873,'F'::varchar,'1985-07-09'::date,12264,'MEPR796726K32'::varchar,'9:58 AM'::varchar,'12:16 AM'::varchar,2,'2009-08-22'::date,'2017-03-28'::date);
 
 
 SELECT * FROM cuentas WHERE curp = 'ZHXY752436AAIJJQ83';
